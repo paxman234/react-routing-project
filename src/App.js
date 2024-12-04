@@ -14,6 +14,7 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
     <Route path=":type" element={<HomePage/>}>
       <Route path=":id" element={<PetDetailsPage/>} />
     </Route>
+    <Route path="search" element={<SearchPage />}/>
   </Route>
 ));
 
