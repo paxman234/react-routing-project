@@ -10,7 +10,10 @@ import { RouterProvider, createBrowserRouter,
 // create router with JSX Route elements
 const appRouter = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Root/>}>
-    
+    <Route path="home-page" element={<HomePage/>} />
+    {/* <Route path="home-page" element={<HomePage/>} />
+    <Route path="home-page" element={<HomePage/>} />
+    <Route path="home-page" element={<HomePage/>} /> */}
   </Route>
 ));
 
