@@ -4,13 +4,11 @@ import { Outlet } from 'react-router-dom';
 
 const Root = () => {
     // const petTypeParams= useParams;
-
     // const type = "cat";
-    
     return (
         <>
             <Navigation/>
-            <Outlet/>
+            {/* <Outlet/> */}
         </>
     );
 };
