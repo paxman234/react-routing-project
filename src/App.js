@@ -12,8 +12,8 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Root/>}>
     <Route path="" element={<HomePage/>} />
     <Route path=":type" element={<HomePage/>} />
-    {/* <Route path="home-page" element={<HomePage/>} />
-    <Route path="home-page" element={<HomePage/>} /> */}
+    <Route path=":type:id" element={<PetDetailsPage/>} />
+    {/* <Route path="home-page" element={<HomePage/>} /> */}
   </Route>
 ));
 
