@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { getPets } from '../../api/petfinder';
 import Hero from '../../components/hero';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Outlet } from 'react-router-dom';
 
 const HomePage = () => {
   const [data, setData] = useState();
-  const type = useParams(':type'); // Fix me!
+  const {type} = useParams(); // Fix me!
 
   useEffect(() => {
     async function getPetsData() {
@@ -27,7 +27,7 @@ const HomePage = () => {
         <span className="pet-type-label">{type ? `${type}s` : 'Pets'}</span>{' '}
         available for adoption near you
       </h3>
-
+      <Outlet/>
       {data.length ? (
         <div className="grid">
           {data.map((animal) => (
